@@ -1,0 +1,26 @@
+{
+    "name": "net.egmsystems/yii2-asset-choices",
+    "description": "yii2 asset to https://github.com/Choices-js/Choices",
+    "type": "yii2-extension",
+    "keywords": ["php","yii2","extension","asset","js","choices.js"],
+    "license": "MIT",
+    "support": {
+        "url": "https://egmsystems.net/yii2-asset-choices",
+        "issues": "https://github.com/egmsystems/yii2-asset-choices/issues",
+        "source": "https://github.com/egmsystems/yii2-asset-choices"
+    },
+    "authors": [
+        {
+            "name": "Edgar Gonzalez",
+            "email": "yii@EGMSystems.net"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "egmyii\\assets\\": ""
+        }
+    }
+}
