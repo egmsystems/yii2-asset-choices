@@ -1,4 +1,4 @@
-# EGM Yii Asset to Choices.js
+# EGM Yii Asset of Choices.js
 
 yii2 asset to https://github.com/Choices-js/Choices
 
