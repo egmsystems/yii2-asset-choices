@@ -1,9 +1,6 @@
-# yii2-asset-choices
-yii2 asset to https://github.com/Choices-js/Choices
-
-EGM Yii Asset to Choices.js
+# EGM Yii Asset to Choices.js
 =======================
-https://github.com/Choices-js/Choices
+yii2 asset to https://github.com/Choices-js/Choices
 
 Installation
 ------------
