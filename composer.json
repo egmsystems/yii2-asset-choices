@@ -22,5 +22,13 @@
         "psr-4": {
             "egmyii\\assets\\": ""
         }
-    }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "egmyii\\assets\\choicejs\\ChoiceJSAsset::download"
+        ],
+        "post-create-project-cmd": [
+            "egmyii\\assets\\choicejs\\ChoiceJSAsset::download"
+        ]
+    },
 }
