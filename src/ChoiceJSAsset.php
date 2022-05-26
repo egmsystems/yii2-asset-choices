@@ -13,12 +13,6 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
     /**
      * {@inheritdoc}
      */
-    public $publishOptions = [
-        "except" => "ChoiceJS.php"
-    ];
-    /**
-     * {@inheritdoc}
-     */
     public $js = [
         'scripts/choices' . (YII_ENV_PROD ? ".min" : "") . '.js',
     ];
@@ -28,24 +22,29 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
     public $css = [
         'styles/choices' . (YII_ENV_PROD ? ".min" : "") . '.css',
     ];
-    function init() {
-        parent::init();
-        if(!is_dir($runtime = \Yii::getAlias($this->sourcePath))){
-            if(!mkdir($runtime)){
-                throw new Exception("!mkdir($runtime)");
+    static function install() {
+        $staticThis = new static;
+        if(!is_dir($staticThis->sourcePath)){
+            if(!mkdir($staticThis->sourcePath)){
+                throw new Exception("!mkdir(sourcePath: {$staticThis->sourcePath})");
             }
         }
         foreach (['scripts/choices', 'styles/choices'] as $asset) {
+            if(!is_dir($localPath = "{$staticThis->sourcePath}/" . \yii\helpers\StringHelper::dirname($asset))){
+                if(!mkdir($localPath)){
+                    throw new Exception("!mkdir(localPath: $localPath)");
+                }
+            }
             foreach (['', '.min'] as $min) {
                 if(strpos($asset, "scripts") === 0){
                     $ext = "js";
                 }else{
                     $ext = "css";
                 }
-                if(!file_exists($runtime . $tmp = "$value$min.$ext")){
-                    $file_get_contents = file_get_contents("https://cdn.jsdelivr.net/npm/choices.js/public/assets/$tmp");
-                    if(file_put_contents($runtime . $tmp, $file_get_contents) === false){
-                        throw new Exception("!file_put_contents($runtime$tmp, file_get_contents)");
+                if(!file_exists($localPath = $staticThis->sourcePath . DIRECTORY_SEPARATOR . $relativePath = "$asset$min.$ext")){
+                    $file_get_contents = file_get_contents("https://cdn.jsdelivr.net/npm/choices.js/public/assets/$relativePath");
+                    if(($file_put_contents = file_put_contents($localPath, $file_get_contents)) !== $strlen = strlen($file_get_contents)){
+                        throw new Exception("$localPath.size($file_put_contents) != http.size($strlen)");
                     }
                 }
             }
