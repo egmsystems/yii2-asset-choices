@@ -36,5 +36,5 @@
         "post-create-project-cmd": [
             "egmyii\\assets\\choicejs\\ChoiceJSAsset::download"
         ]
-    },
+    }
 }
