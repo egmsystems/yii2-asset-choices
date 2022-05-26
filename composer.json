@@ -23,6 +23,12 @@
             "egmyii\\assets\\": ""
         }
     },
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/egmsystems/yii2-asset-choices"
+        }
+    ],
     "scripts": {
         "post-install-cmd": [
             "egmyii\\assets\\choicejs\\ChoiceJSAsset::download"
