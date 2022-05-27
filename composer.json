@@ -4,15 +4,16 @@
     "type": "yii2-extension",
     "keywords": ["php","yii2","extension","asset","js","choices.js"],
     "license": "MIT",
-    "homepage": "https://egmsystems.net?yii2-asset-choices",
+    "homepage": "https://github.com/egmsystems/yii2-asset-choices",
     "support": {
         "issues": "https://github.com/egmsystems/yii2-asset-choices/issues",
-        "source": "https://github.com/egmsystems/yii2-asset-choices"
+        "source": "https://github.com/egmsystems/yii2-asset-choices/tree/main/src"
     },
     "authors": [
         {
             "name": "Edgar Gonzalez",
-            "email": "yii2-asset-choices@EGMSystems.net"
+            "email": "yii2-asset-choices@EGMSystems.net",
+            "homepage": "https://egmsystems.net?yii2-asset-choices"
         }
     ],
     "require": {
