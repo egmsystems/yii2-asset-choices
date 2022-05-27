@@ -33,9 +33,6 @@
     "scripts": {
         "post-install-cmd": [
             "egmyii\\assets\\choicejs\\ChoiceJSAsset::postInstallCmd"
-        ],
-        "post-create-project-cmd": [
-            "egmyii\\assets\\choicejs\\ChoiceJSAsset::download"
         ]
     }
 }
