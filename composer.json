@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "egmyii\\assets\\choicejs\\": ""
+            "egmyii\\assets\\choicejs\\": "src"
         }
     },
     "repositories":[
