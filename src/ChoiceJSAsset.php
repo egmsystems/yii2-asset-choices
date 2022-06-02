@@ -13,15 +13,11 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
     /**
      * {@inheritdoc}
      */
-    public $js = [
-        'scripts/choices' . (YII_ENV_PROD ? ".min" : "") . '.js',
-    ];
+    public $js = ['scripts/choices' . (YII_ENV_PROD ? ".min" : "") . '.js'];
     /**
      * {@inheritdoc}
      */
-    public $css = [
-        'styles/choices' . (YII_ENV_PROD ? ".min" : "") . '.css',
-    ];
+    public $css = ['styles/choices' . (YII_ENV_PROD ? ".min" : "") . '.css'];
     static function postInstallCmd() {
         $staticThis = new static;
         (var_dump($staticThis));
