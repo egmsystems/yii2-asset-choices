@@ -23,7 +23,6 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
         'styles/choices' . (YII_ENV_PROD ? ".min" : "") . '.css',
     ];
     static function postInstallCmd(Event $event) {
-        exit(var_dump($event));
         $staticThis = new static;
         if(!is_dir($staticThis->sourcePath)){
             if(!mkdir($staticThis->sourcePath)){
@@ -50,5 +49,6 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
                 }
             }
         }
+        exit(var_dump($event));
     }
 }
