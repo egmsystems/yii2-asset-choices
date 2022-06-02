@@ -36,8 +36,7 @@
         }
     },
     "scripts": {
-        "post-install-cmd": [
-            "egmyii\\choicejs\\ChoiceJSAsset::postInstallCmd"
-        ]
+        "post-install-cmd": "egmyii\\choicejs\\ChoiceJSAsset::postInstallCmd",
+        "post-update-cmd": "egmyii\\choicejs\\ChoiceJSAsset::postInstallCmd",
     }
 }
