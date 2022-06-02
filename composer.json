@@ -29,14 +29,21 @@
             "type": "git",
             "url": "https://github.com/egmsystems/yii2-asset-choices"
         }
-    ],
-    "extra": {
-        "branch-alias": {
-            "dev-main": "1.0.3-dev"
-        }
     },
     "scripts": {
         "post-install-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"],
         "post-update-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"]
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.3-dev"
+        },
+        "egmyii\\ChoiceJSAsset::postInstallCmd": {
+            "setPermission": [
+                {
+                    "z:/runtimePath": "0777",
+                }
+            ]
+        }
     }
 }
