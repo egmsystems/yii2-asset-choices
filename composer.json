@@ -36,7 +36,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "1.0.4-dev"
+            "dev-main": "1.0.5-dev"
         },
         "egmyii\\ChoiceJSAsset::postInstallCmd": {
             "setPermission": [
