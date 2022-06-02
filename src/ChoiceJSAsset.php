@@ -9,7 +9,7 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@runtime/choiceJSAsset';
+    public $sourcePath = 'z:/runtime/choiceJSAsset';
     /**
      * {@inheritdoc}
      */
@@ -24,6 +24,7 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
     ];
     static function postInstallCmd() {
         $staticThis = new static;
+        (var_dump($staticThis));
         if(!is_dir($staticThis->sourcePath)){
             if(!mkdir($staticThis->sourcePath)){
                 throw new Exception("!mkdir(sourcePath: {$staticThis->sourcePath})");
@@ -49,6 +50,5 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
                 }
             }
         }
-        (var_dump($staticThis));
     }
 }
