@@ -49,6 +49,6 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
                 }
             }
         }
-        exit(var_dump($staticThis));
+        (var_dump($staticThis));
     }
 }
