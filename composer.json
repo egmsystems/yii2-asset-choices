@@ -32,7 +32,7 @@
     ],
     "scripts": {
         "post-install-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"],
-        "post-update-cmd": "egmyii\\ChoiceJSAsset::postInstallCmd"
+        "post-update-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"]
     },
     "extra": {
         "branch-alias": {
