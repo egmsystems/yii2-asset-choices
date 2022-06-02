@@ -41,7 +41,7 @@
         "egmyii\\ChoiceJSAsset::postInstallCmd": {
             "setPermission": [
                 {
-                    "z:/runtimePath": "0777",
+                    "z:/runtimePath": "0777"
                 }
             ]
         }
