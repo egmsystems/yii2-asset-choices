@@ -26,13 +26,13 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
         $staticThis = new static;
         (var_dump($staticThis));
         if(!is_dir($staticThis->sourcePath)){
-            if(!mkdir($staticThis->sourcePath)){
+            if(!mkdir($staticThis->sourcePath, 0777, true)){
                 throw new Exception("!mkdir(sourcePath: {$staticThis->sourcePath})");
             }
         }
         foreach (['scripts/choices', 'styles/choices'] as $asset) {
             if(!is_dir($localPath = "{$staticThis->sourcePath}/" . \yii\helpers\StringHelper::dirname($asset))){
-                if(!mkdir($localPath)){
+                if(!mkdir($localPath, 0777, true)){
                     throw new Exception("!mkdir(localPath: $localPath)");
                 }
             }
