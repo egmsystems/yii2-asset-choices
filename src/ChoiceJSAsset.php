@@ -1,6 +1,6 @@
 <?php
 
-namespace egmyii\assets\choicejs;
+namespace egmyii\choicejs;
 
 /**
  * egm ChoiceJS asset bundle.
