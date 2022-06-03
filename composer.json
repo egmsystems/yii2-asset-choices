@@ -28,6 +28,10 @@
         {
             "type": "git",
             "url": "https://github.com/egmsystems/yii2-asset-choices"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "scripts": {
