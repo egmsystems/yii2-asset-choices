@@ -38,8 +38,8 @@
         "pre-install-cmd": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
         "pre-update-cmd": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
         "pre-package-install": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
-        "post-install-cmd": ["egmyii\\choicejs\\ComposerScript::postInstallCmd"],
-        "post-update-cmd": ["egmyii\\choicejs\\ComposerScript::postInstallCmd"],
+        "post-install-cmd": ["src\\ComposerScript::postInstallCmd"],
+        "post-update-cmd": ["src\\ComposerScript::postInstallCmd"],
         "post-package-update": ["src\\ComposerScript::postInstallCmd"]
     },
     "extra": {
