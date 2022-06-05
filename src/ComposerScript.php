@@ -1,17 +1,21 @@
 <?php
 namespace egmyii\choicejs;
-use Composer\Script\Event;
+//use Composer\Script\Event;
 class ComposerScript{
-    public static function preInstall(Event $event) {
-        // provides access to the current ComposerIOConsoleIO
-        // stream for terminal input/output
-        $io = $event->getIO();
-        if ($io->askConfirmation("Are you sure you want to proceed? ", false)) {
-            // ok, continue on to composer install
-            return true;
-        }
-        // exit composer and terminate installation process
-        exit;
+    public static function preInstall() {
+        var_dump(__LINE__);
+    }
+    public static function preUpdateCmd() {
+        var_dump(__LINE__);
+    }
+    public static function prePackageInstall() {
+        var_dump(__LINE__);
+    }
+    public static function postUpdateCmd() {
+        var_dump(__LINE__);
+    }
+    public static function postPackageInstall() {
+        var_dump(__LINE__);
     }
     static function postInstallCmd() {
         $staticThis = new static;
