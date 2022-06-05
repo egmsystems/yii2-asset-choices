@@ -11,6 +11,9 @@ class ComposerScript{
     static function postInstallCmd() {
         var_dump(__LINE__);
     }
+    static function postAutoloadDump() {
+        var_dump(__LINE__);
+    }
     public static function postUpdateCmd() {
         var_dump(__LINE__);
     }
