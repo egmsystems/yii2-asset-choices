@@ -35,12 +35,10 @@
         }
     ],
     "scripts": {
-        "pre-install-cmd": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
-        "pre-update-cmd": ["egmyii\\choicejs\\ComposerScript::preUpdateCmd"],
-        "pre-package-install": ["egmyii\\choicejs\\ComposerScript::prePackageInstall"],
         "post-install-cmd": ["src\\ComposerScript::postInstallCmd"],
         "post-update-cmd": ["src\\ComposerScript::postUpdateCmd"],
-        "post-package-update": ["src\\ComposerScript::postPackageInstall"]
+        "post-package-install": ["src\\ComposerScript::postPackageInstall"],
+        "post-package-update": ["src\\ComposerScript::postPackageUpdate"]
     },
     "extra": {
         "branch-alias": {
