@@ -1,3 +1,4 @@
+namespace egmyii\choicejs;
 class Installer{
     public static function preInstall($event) {
         // provides access to the current ComposerIOConsoleIO
