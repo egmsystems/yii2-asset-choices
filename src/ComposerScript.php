@@ -2,22 +2,16 @@
 namespace egmyii\choicejs;
 //use Composer\Script\Event;
 class ComposerScript{
-    public static function preInstall() {
-        var_dump(__LINE__);
-    }
-    public static function preUpdateCmd() {
-        var_dump(__LINE__);
-    }
-    public static function prePackageInstall() {
-        var_dump(__LINE__);
-    }
-    public static function postUpdateCmd() {
-        var_dump(__LINE__);
-    }
     public static function postPackageInstall() {
         var_dump(__LINE__);
     }
+    public static function postPackageUpdate() {
+        var_dump(__LINE__);
+    }
     static function postInstallCmd() {
+        var_dump(__LINE__);
+    }
+    public static function postUpdateCmd() {
         var_dump(__LINE__);
     }
     static function egmInstall() {
