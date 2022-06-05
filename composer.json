@@ -35,16 +35,16 @@
         }
     ],
     "scripts": {
-        "pre-install-cmd": ["egmyii\\ChoiceJSAsset::preInstallCmd"],
-        "pre-update-cmd": ["egmyii\\ChoiceJSAsset::preInstallCmd"],
-        "post-install-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"],
-        "post-update-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"]
+        "pre-install-cmd": ["egmyii\\ComposerScript::preInstallCmd"],
+        "pre-update-cmd": ["egmyii\\ComposerScript::preInstallCmd"],
+        "post-install-cmd": ["egmyii\\ComposerScript::postInstallCmd"],
+        "post-update-cmd": ["egmyii\\ComposerScript::postInstallCmd"]
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "1.0.6-dev"
+            "dev-main": "1.0.7-dev"
         },
-        "egmyii\\ChoiceJSAsset::postInstallCmd": {
+        "egmyii\\ComposerScript::postInstallCmd": {
             "setPermission": [
                 {
                     "z:/runtimePath": "0777"
