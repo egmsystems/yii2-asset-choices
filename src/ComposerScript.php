@@ -1,7 +1,8 @@
 <?php
 namespace egmyii\choicejs;
+use Composer\Script\Event;
 class ComposerScript{
-    public static function preInstall($event) {
+    public static function preInstall(Event $event) {
         // provides access to the current ComposerIOConsoleIO
         // stream for terminal input/output
         $io = $event->getIO();
