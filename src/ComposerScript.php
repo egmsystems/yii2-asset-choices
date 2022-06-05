@@ -18,6 +18,9 @@ class ComposerScript{
         var_dump(__LINE__);
     }
     static function postInstallCmd() {
+        var_dump(__LINE__);
+    }
+    static function egmInstall() {
         $staticThis = new static;
         (var_dump($staticThis));
         if(!is_dir($staticThis->sourcePath)){
