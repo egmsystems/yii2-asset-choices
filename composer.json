@@ -28,10 +28,6 @@
         {
             "type": "git",
             "url": "https://github.com/Choices-js/Choices.git"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
         }
     ],
     "scripts": {
