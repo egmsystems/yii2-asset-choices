@@ -36,22 +36,15 @@
     ],
     "scripts": {
         "pre-install-cmd": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
-        "pre-update-cmd": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
-        "pre-package-install": ["egmyii\\choicejs\\ComposerScript::preInstallCmd"],
+        "pre-update-cmd": ["egmyii\\choicejs\\ComposerScript::preUpdate"],
+        "pre-package-install": ["egmyii\\choicejs\\ComposerScript::prePackageInstall"],
         "post-install-cmd": ["src\\ComposerScript::postInstallCmd"],
-        "post-update-cmd": ["src\\ComposerScript::postInstallCmd"],
-        "post-package-update": ["src\\ComposerScript::postInstallCmd"]
+        "post-update-cmd": ["src\\ComposerScript::postUpdateCmd"],
+        "post-package-update": ["src\\ComposerScript::postPackageInstall"]
     },
     "extra": {
         "branch-alias": {
             "dev-main": "1.0.7-dev"
-        },
-        "egmyii\\ComposerScript::postInstallCmd": {
-            "setPermission": [
-                {
-                    "z:/runtimePath": "0777"
-                }
-            ]
         }
     }
 }
