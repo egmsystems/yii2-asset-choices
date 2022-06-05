@@ -36,6 +36,7 @@
     ],
     "scripts": {
         "pre-install-cmd": ["egmyii\\ChoiceJSAsset::preInstallCmd"],
+        "pre-update-cmd": ["egmyii\\ChoiceJSAsset::preInstallCmd"],
         "post-install-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"],
         "post-update-cmd": ["egmyii\\ChoiceJSAsset::postInstallCmd"]
     },
