@@ -1,3 +1,4 @@
+<?php
 namespace egmyii\choicejs;
 class ComposerScript{
     public static function preInstall($event) {
