@@ -1,5 +1,5 @@
 namespace egmyii\choicejs;
-class Installer{
+class ComposerScript{
     public static function preInstall($event) {
         // provides access to the current ComposerIOConsoleIO
         // stream for terminal input/output
