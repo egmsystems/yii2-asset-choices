@@ -18,7 +18,7 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "egmsystems/choices-js": "*"
+        "egmsystems/choices-js": "dev-master"
     },
     "autoload": {
         "psr-4": {
