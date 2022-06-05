@@ -37,6 +37,7 @@
     "scripts": {
         "post-install-cmd": ["src\\ComposerScript::postInstallCmd"],
         "post-update-cmd": ["src\\ComposerScript::postUpdateCmd"],
+        "post-autoload-dump": ["src\\ComposerScript::postAutoloadDump"],
         "post-package-install": ["src\\ComposerScript::postPackageInstall"],
         "post-package-update": ["src\\ComposerScript::postPackageUpdate"]
     },
