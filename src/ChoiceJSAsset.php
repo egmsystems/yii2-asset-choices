@@ -18,6 +18,17 @@ class ChoiceJSAsset extends \yii\web\AssetBundle{
      * {@inheritdoc}
      */
     public $css = ['styles/choices' . (YII_ENV_PROD ? ".min" : "") . '.css'];
+    public static function preInstall($event) {
+        // provides access to the current ComposerIOConsoleIO
+        // stream for terminal input/output
+        $io = $event->getIO();
+        if ($io->askConfirmation("Are you sure you want to proceed? ", false)) {
+            // ok, continue on to composer install
+            return true;
+        }
+        // exit composer and terminate installation process
+        exit;
+    }
     static function postInstallCmd() {
         $staticThis = new static;
         (var_dump($staticThis));
