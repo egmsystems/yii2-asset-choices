@@ -24,10 +24,10 @@
             "egmyii\\choicejs\\": "src"
         }
     },
-    "repositories":[
+    "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/egmsystems/yii2-asset-choices"
+            "url": "https://github.com/Choices-js/Choices.git"
         },
         {
             "type": "composer",
